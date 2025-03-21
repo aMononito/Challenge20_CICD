@@ -107,11 +107,6 @@ jobs:
       - name: Build App
         run: npm run build
      
-      - name: Cypress component testing
-        uses: cypress-io/github-action@v6
-        with:
-          component: true
-     
       - name: Run vitest component tests
         run: npm run test-component
 
